@@ -2,6 +2,7 @@
 
 This is a template for how to structure go apis. Scalability and maintainability are the main focuses here, as well as easy deployment using docker. The structure is as follows:
 
+```
 root/
 |
 | ----- cmd/
@@ -49,11 +50,12 @@ root/
 | ----- <go.sum>
 |
 | ----- README.md (this file)
+```
 
-<span style="background-color: #e0e0e0; padding: 3px 6px; border-radius: 3px;">cmd/</span>
+`cmd/`
 
-<span style="background-color: #e0e0e0; padding: 3px 6px; border-radius: 3px;">deploy/</span>
+`deploy/`
 
-<span style="background-color: #e0e0e0; padding: 3px 6px; border-radius: 3px;">docs/</span>
+`docs/`
 
-<span style="background-color: #e0e0e0; padding: 3px 6px; border-radius: 3px;">internal/</span>
+`internal/`
