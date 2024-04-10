@@ -3,3 +3,6 @@
 
 # IDEA files
 .idea/
+
+# Environment   (Un-comment these for applications)
+#.env
