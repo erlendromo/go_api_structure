@@ -29,21 +29,31 @@ root/
 |        |
 |        | ----- constants/
 |        |
+|        | ----- datasources/
+|        |        |
+|        |        | ----- firestore/
+|        |        |        |
+|        |        |        | ----- firestore_handler.go
+|        |        |        |
+|        |        |        | ----- firestore.go
+|        |
 |        | ----- html/
 |        |        |
 |        |        | ----- index.html
 |        |
 |        | ----- http/
 |        |        |
-|        |        | ----- handlers/ (http-handlers for different endpoints)
+|        |        | ----- handlers/
 |        |        |
 |        |        | ----- route/
 |        |        |        |
-|        |        |        | ----- router.go (route requests to the different handlers)
+|        |        |        | ----- router.go
 |        |
 |        | ----- mocks/
 |        |
 |        | ----- utils/
+|
+| ----- .dockerignore
 |
 | ----- .env (remember to .gitignore this file in actual projects)
 |
@@ -55,9 +65,11 @@ root/
 |
 | ----- go.mod
 |
-| ----- <go.sum> (will be created when using go get <package>)
+| ----- <go.sum> (will be created when using go get <package> for external libraries)
 |
 | ----- README.md (this file)
+|
+| ----- swagger.yaml (optional for web-based documentation)
 ```
 
 ##### `cmd` folder
@@ -83,6 +95,10 @@ This folder contains all the business logic and other implementation details of 
 -   `constants` folder
 
     -   this folder contains constant values used throughout the application.
+
+-   `datasources` folder
+
+    -   this folder contains implementations of different storage-based operation (e.g. firestore, postgreSQL etc.)
 
 -   `html` folder
 
